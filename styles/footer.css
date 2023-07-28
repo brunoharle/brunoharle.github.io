@@ -1,0 +1,111 @@
+.footer-pages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  margin-top: 24px;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+
+  color: #000;
+}
+
+h1{
+  margin-top: 40px;
+  
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+a {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+
+  text-decoration: none;
+}
+
+.footer-info {
+  display: flex;
+  justify-content:space-around;
+  height: 85px;
+  margin-top: 64px;
+  background-color: #353535;
+}
+
+.social-medias {
+  display: flex;
+  padding-right: 0px;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+}
+
+.payment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 22px;
+}
+
+.plataform {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.plataform p {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+
+  color: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .footer-container h1::after {
+    margin-left: 65%;
+    content: '+';
+  }
+
+  h1 {
+    margin-left: 15px;
+  }
+
+  li {
+    display: none;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    height: 233px;
+  }
+
+  .plataform {
+    justify-content: center;
+  }
+
+  .vtex img {
+    background-image: url('../images/footer/logo-vtex-mobile.png');
+  }
+}

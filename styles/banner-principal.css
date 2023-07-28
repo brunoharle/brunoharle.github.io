@@ -1,0 +1,173 @@
+.banner-container-mobile {
+    display: none;
+}
+
+.banner-container-desktop {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto 40px;
+    overflow: hidden;
+
+    color: #fff;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+}
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.prev {
+    left: 10%;
+}
+
+.next {
+    right: 10%;
+}
+
+.carousel-dots {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin-left: -76px;
+    margin-top: -40px;
+}
+
+.dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    background: url('../images/banner-principal/banner_dot_empty.svg');
+}
+
+.dot.active,
+.dot:first-child {
+    background: url('../images/banner-principal/banner_dot_full.svg');
+}
+
+.carousel-text {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+}
+
+.carousel-text h1 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.carousel-text p {
+    width: 465px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+
+    margin-top: 40px;
+    margin-bottom: 32px;
+}
+
+.carousel-text button {
+    border: none;
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 14px 30px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+
+    background-color: #FAA500;
+}
+
+@media screen and (max-width: 768px) {
+    .banner-container-desktop {
+        display: none;
+    }
+
+    .banner-container-mobile {
+        display: block;
+    }
+    .carousel-text {
+        position: absolute;
+        top: 20%;
+        left: 18%;
+    }
+
+    .carousel-text h1 {
+        width: 223px;
+        font-size: 30px;
+    }
+
+    .carousel-text p {
+        width: 239px;
+        margin-top: 25px;
+        margin-bottom: 15px;
+
+        font-size: 14px;
+    }
+
+    .carousel-text button {
+        width: 76px;
+        height: 28px;
+
+        font-size: 14px;
+    }
+
+    .carousel-arrow {
+        position: absolute;
+        top: 33%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        font-size: 24px;
+    }
+    
+    .prev {
+        left: 8%;
+    }
+    
+    .next {
+        right: 8%;
+    }
+
+    .carousel-dots-mobile {
+        display: flex;
+        position: absolute;
+        left: 50%;
+        margin-left: -30px;
+        margin-top: -25px;
+    }
+    .dot {
+        width: 8px;
+        height: 8px !important;
+        margin: 0 5px;
+        cursor: pointer;
+        background: url('../images/banner-principal/icon-elipsevazio-mobile.svg');
+    }
+
+    .carousel-dots-mobile .dot.active, .dot:first-child {
+        background: url('../images/banner-principal/icon-elipsecheia-mobile.svg');
+    }
+}
