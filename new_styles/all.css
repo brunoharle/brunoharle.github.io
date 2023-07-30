@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Titillium+Web:wght@400;700&display=swap');
+
+* {
+    font-family: Titillium Web;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #353535;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+}
